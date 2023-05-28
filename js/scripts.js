@@ -149,7 +149,20 @@ function scrollFunctionBTT() {
 }
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
+function topFunction(){
 	document.body.scrollTop = 0; // for Safari
 	document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE and Opera
 }
+
+
+function Whatsapp() {
+	var WName = $("#wname").val()
+	var WPhone = $("#wphone").val()
+	var WEmail = $("#wemail").val()
+	var WService = $("#wservice").val()
+	var WMessage = $("#wmessage").val()
+
+		var enquirymessage = " *New Enquiry*" + '\n' + "- Name: " + WName + '\n' + "- Contact: " + WPhone + '\n' + "- Email: " + WEmail + '\n' +"- Service Requesting: " + WService + '\n'  "- Message: " + WMessage;
+		var omuri = encodeURI(enquirymessage)
+		window.open(href = "https://wa.me/+916282414031?text=" + omuri);
+	}

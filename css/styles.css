@@ -368,7 +368,7 @@ select {
 }
 
 .navbar .logo-image img {
-    width: 333px;
+    width: 250px;
 }
 
 .navbar .logo-text {
@@ -1521,8 +1521,8 @@ select {
 	
 	.header .image-container img {
 		position: absolute;
-		top: -80px;
-		left: 10px;
+		top: -50px;
+		right: 10px;
 		width: 840px;
 		max-width: none;
 	}
@@ -1646,3 +1646,19 @@ select {
 	/* end of extra pages */
 }
 /* end of min-width 1200px */
+
+.whfloat{
+	position:fixed;
+    visibility: visible;
+	width:55px;
+	height:55px;
+	bottom:85px;
+	right:20px;
+    z-index: 996;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:25px;
+
+}
