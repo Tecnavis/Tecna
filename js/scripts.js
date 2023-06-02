@@ -155,7 +155,7 @@ function topFunction(){
 }
 
 
-function Whatsapp() {
+function Whatsapp(){
 	var WName = $("#wname").val()
 	var WPhone = $("#wphone").val()
 	var WEmail = $("#wemail").val()
