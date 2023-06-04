@@ -164,14 +164,14 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 	var email = document.getElementById('email').value;
 	var phone = document.getElementById('phone').value;
 	var service = document.getElementById('service').value;
-	var message = document.getElementById('message').value;
+	var messageContent = document.getElementById('message').value;
   
 	// Construct the WhatsApp message
 	var message = "Name: " + name + "%0a";
 	message += "Email: " + email+ "%0a";
 	message += "Phone Number: " + phone+ "%0a";
 	message += "Service Requestig: " + service+ "%0a";
-	message += " " + message;
+	message += "Message: " + messageContent;
   
 	// Open WhatsApp in a new window or tab with the message
 	window.open("https://wa.me/916282414031?text=" + encodeURIComponent(message), "_blank");
