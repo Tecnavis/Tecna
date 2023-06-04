@@ -587,16 +587,16 @@
                     <!-- Contact Form -->
                     <form>
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="wname" placeholder="Name" required>
+                            <input type="text" class="form-control-input" id="name" placeholder="Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="wemail" placeholder="Email" required>
+                            <input type="email" class="form-control-input" id="email" placeholder="Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="number" class="form-control-input" id="wphone" placeholder="Phone Number" required>
+                            <input type="number" class="form-control-input" id="phone" placeholder="Phone Number" required>
                         </div>
                         <div class="form-group">
-                            <select class="form-control-select" id="wservice" required>
+                            <select class="form-control-select" id="service" required>
                                 <option class="select-option" value="" disabled selected>Project type</option>
                                 <option class="select-option" value="Company Website">Company Website</option>
                                 <option class="select-option" value="Landing Page">E-Commerce</option>
@@ -604,9 +604,9 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control-textarea" id="wmessage" placeholder="Message" required></textarea>
+                            <textarea class="form-control-textarea" id="message" placeholder="Message" required></textarea>
                         </div>
-                        <div class="form-group" onclick="Whatsapp();">
+                        <div class="form-group">
                             <button type="submit"  class="form-control-submit-button">Submit</button>
                         </div>
                     </form>
@@ -686,10 +686,11 @@
         <img src="images/up-arrow.png" alt="alternative">
     </button>
     <!-- end of back to top button -->
-    	
+    <button onclick="whatsappFunction()" id="mywaBtn">	
     <a href="https://wa.me/916282414031/?text=I need a consultation!" class="whfloat d-flex align-items-center justify-content-center" target="_blank" style=" text-decoration: none;">
         <img src="images/whatsapp (2).png" height="30px" alt="alternative">
     </a>
+</button>
 
     <!-- Scripts -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->

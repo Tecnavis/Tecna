@@ -141,7 +141,7 @@ myButton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 function scrollFunctionBTT() {
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
 		myButton.style.display = "block";
 	} else {
 		myButton.style.display = "none";
@@ -155,14 +155,24 @@ function topFunction(){
 }
 
 
-function Whatsapp(){
-	var WName = $("#wname").val()
-	var WPhone = $("#wphone").val()
-	var WEmail = $("#wemail").val()
-	var WService = $("#wservice").val()
-	var WMessage = $("#wmessage").val()
-
-		var enquirymessage = " *New Enquiry*" + '\n' + "- Name: " + WName + '\n' + "- Contact: " + WPhone + '\n' + "- Email: " + WEmail + '\n' +"- Service Requesting: " + WService + '\n'  "- Message: " + WMessage;
-		var omuri = encodeURI(enquirymessage)
-		window.open(href = "https://wa.me/+916282414031?text=" + omuri);
-	}
+	// Add an event listener to the form submission
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+	e.preventDefault(); // Prevent the default form submission
+  
+	// Get the form values
+	var name = document.getElementById('name').value;
+	var email = document.getElementById('email').value;
+	var phone = document.getElementById('phone').value;
+	var service = document.getElementById('service').value;
+	var message = document.getElementById('message').value;
+  
+	// Construct the WhatsApp message
+	var message = "Name: " + name + "%0a";
+	message += "Email: " + email+ "%0a";
+	message += "Phone Number: " + phone+ "%0a";
+	message += "Service Requestig: " + service+ "%0a";
+	message += " " + message;
+  
+	// Open WhatsApp in a new window or tab with the message
+	window.open("https://wa.me/916282414031?text=" + encodeURIComponent(message), "_blank");
+  });
