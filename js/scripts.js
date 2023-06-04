@@ -167,10 +167,10 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 	var messageContent = document.getElementById('message').value;
   
 	// Construct the WhatsApp message
-	var message = "Name: " + name + "%0a";
-	message += "Email: " + email+ "%0a";
-	message += "Phone Number: " + phone+ "%0a";
-	message += "Service Requestig: " + service+ "%0a";
+	var message = "Name: " + name + "\n";
+	message += "Email: " + email+ "\n";
+	message += "Phone Number: " + phone+ "\n";
+	message += "Service Requestig: " + service+ "\n";
 	message += "Message: " + messageContent;
   
 	// Open WhatsApp in a new window or tab with the message
