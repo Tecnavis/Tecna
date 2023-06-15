@@ -589,7 +589,45 @@ select {
 	margin-left: 0.5rem;
 }
 
-
+/* card hover */
+.card {
+	perspective: 1000px;
+	position: relative;
+  }
+  
+  .card-inner {
+	width: 100%;
+	height: 100%;
+	transition: transform 0.5s;
+	transform-style: preserve-3d;
+  }
+  
+  .card-front,
+  .card-back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+  
+  .card-back {
+	transform: rotateY(180deg);
+  }
+  
+  .card:hover .card-inner {
+	transform: rotateY(180deg);
+  }
+  
+  .card:hover .card-front {
+	visibility: hidden;
+  }
+  
+  .card .card-body {
+	padding: 20px;
+  }
+  
 /*********************/
 /*     Details 1     */
 /*********************/
@@ -894,7 +932,7 @@ select {
 .cards-2 .card {
 	margin-bottom: 5rem;
 	padding: 4rem 1rem;
-	border: 1px solid #5e6576;
+	border: 10px solid #5e6576;
 	border-radius: 20px;
 	background-color: transparent;
 	text-align: center;
