@@ -587,6 +587,10 @@ select {
 
 .cards-1 .list-unstyled .flex-grow-1 {
 	margin-left: 0.5rem;
+
+}
+.flex-grow-1:hover{
+	background-color: #f5f0fa;
 }
 
 /* card hover */
@@ -1165,7 +1169,9 @@ select {
 	padding: 1.25rem 1.25rem 0.5rem 1.25rem;
 	background-color: #f9f9f9;
 }
-
+.ex-basic-1 .p100{
+	margin-top: 150px;
+}
 .ex-cards-1 .card {
 	border: none;
 	background-color: transparent;
@@ -1705,4 +1711,21 @@ select {
 
 .whfloat:hover {
 	background-color: #06933a;
+}
+#office-img{
+	border-radius:20px;
+	box-shadow: 5px 7px rgb(228, 209, 228);
+}
+#align-div-left{
+	float:left;
+	width: 50%;
+}
+align-div-right{
+	float:right;
+	width: 50%;
+}
+#img-adj{
+	margin-top: 50px;
+	margin-left:250px ;
+	width: 360px;
 }
