@@ -176,3 +176,9 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 	// Open WhatsApp in a new window or tab with the message
 	window.open("https://wa.me/916282414031?text=" + encodeURIComponent(message), "_blank");
   });
+  $(document).ready(function(){
+	$('.carousel').carousel({
+	  padding:800,
+	  dist:-200        
+	});
+  });
