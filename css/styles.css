@@ -1780,3 +1780,13 @@ ul b{
 	margin-top:1rem;
 	margin-bottom:2rem;
   }
+  .abt-align{
+	align-items: end;
+	justify-conte	nt: end;
+	display: flex;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .tec-font{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-style: inherit;
+  }
